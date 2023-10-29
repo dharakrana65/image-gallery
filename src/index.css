@@ -1,6 +1,9 @@
+/* Import the 'Agbalumo' font from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
 body {
   width: 100%;
-  height: 100vh;
+  height: 100vh; 
 }
 
 .load-btn {
@@ -11,49 +14,64 @@ body {
   border-radius: 34px;
   cursor: pointer;
   font-weight: 500;
-  background-color: #0c356a;
-  color: #ffc436;
+  background-color: #080808;
+  color: #efefef;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-}
-.search-bar {
-  padding: 32px;
-  background: url("D:/project practice/ImageGallery/image-gallery/src/images/bg.webp") no-repeat;
-  background-size: 100%;
-  width: 90%;
-  height: 200px;
-  margin: auto;
-  background-color: #0c356a;
-  border-radius: 10px;
+  transform: translateX(-50%); /* Center the button horizontally using a translation. */
 }
 
+
+.search-bar {
+  padding: 32px;
+  width: 90%;
+  height: 200px;
+  margin: auto; /* Center the container horizontally. */
+  border-radius: 10px; 
+}
+
+
 .search-bar .heading-container {
-  width: 50%;
+  font-family: "Agbalumo";
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
-  color: #0c356a;
+  align-items: center;
+  margin-bottom: 24px;
+  color: #080808; 
 }
 
+/* Style for the first span "Immerse in Imagery" */
 .search-bar .heading-container :first-child {
-  font-size: 50px;
+  font-size: 56px; 
 }
 
+/* Style for the last child element "Where Every Picture Tells a Tale" */
 .search-bar .heading-container :last-child {
-  font-size: 20px;
+  font-size: 24px; 
 }
+
 .search-bar input {
-  width: 600px;
-  height: 40px;
+  width: 600px; 
+  height: 40px; 
+  font-size: 18px;
   border: none;
-  border-radius: 20px;
-  font-weight: 500;
-  background-color: #efefef;
-  color: #ffc436;
+  border-radius: 28px; 
+  font-weight: 500; 
+  background-color: white; 
+  color: #080808; 
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 4px 8px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  padding: 8px 10px; 
+  transition: all ease 0.5s;
+}
+
+.search-bar input:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
